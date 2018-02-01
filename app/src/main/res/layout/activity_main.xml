@@ -7,12 +7,140 @@
     tools:context="dam.romsabryan.db.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/name"
+        app:layout_constraintEnd_toStartOf="@+id/editText_name"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/subname"
+        app:layout_constraintEnd_toStartOf="@+id/editText_subname"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/marks"
+        app:layout_constraintEnd_toStartOf="@+id/editText_marks"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_subname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name" />
+
+    <EditText
+        android:id="@+id/editText_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_subname" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@+id/textView_id"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/view"
+        app:layout_constraintStart_toEndOf="@+id/button_add"
+        app:layout_constraintTop_toBottomOf="@+id/editText_id" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add"
+        app:layout_constraintVertical_bias="0.032"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toEndOf="@+id/textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/editText_marks" />
+
+    <Button
+        android:id="@+id/button_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/delete"
+        app:layout_constraintStart_toEndOf="@+id/button_update"
+        app:layout_constraintTop_toBottomOf="@+id/button_view" />
 
 </android.support.constraint.ConstraintLayout>
