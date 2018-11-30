@@ -1,3 +1,3 @@
 # android.DB
 
-Android application with MYSQL database service
+Android application with internal  MYSQL database service
